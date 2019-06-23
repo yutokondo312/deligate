@@ -8,7 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, senderDelegate {
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
+    if segue.identifier == "messageSegue" {
+        let BViewController:BViewController = segue.destination as! BViewController
+    BViewController.delegate = self
+        }
+    }
+    func receiveMessage(message: NSString) {
+        print(message)
+    }
+    
     let a: String = "A"
     
  
@@ -17,6 +28,7 @@ class ViewController: UIViewController {
         if let second = storyboard.instantiateViewController(withIdentifier:"B") as? BViewController {
             second.b = a
         self.present(second, animated: true, completion: nil)
+            
         }
     }
 

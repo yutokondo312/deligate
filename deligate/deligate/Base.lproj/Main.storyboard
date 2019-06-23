@@ -40,17 +40,30 @@
         <!--View Controller-->
         <scene sceneID="bKn-Rc-uTs">
             <objects>
-                <viewController storyboardIdentifier="B" id="Ykm-hf-GCy" customClass="BViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="B" id="Ykm-hf-GCy" customClass="BViewController" customModule="deligate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e3R-qJ-eeJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khf-Yg-aVi">
+                                <rect key="frame" x="171.5" y="318" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="move2:" destination="Ykm-hf-GCy" eventType="touchUpInside" id="cfb-Os-uEZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="khf-Yg-aVi" firstAttribute="centerX" secondItem="e3R-qJ-eeJ" secondAttribute="centerX" id="vrI-tb-xpe"/>
+                            <constraint firstItem="khf-Yg-aVi" firstAttribute="centerY" secondItem="e3R-qJ-eeJ" secondAttribute="centerY" id="x50-yJ-JAB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cjp-Dq-jwF"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vTJ-up-itN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="823" y="71"/>
+            <point key="canvasLocation" x="934" y="134"/>
         </scene>
     </scenes>
 </document>
