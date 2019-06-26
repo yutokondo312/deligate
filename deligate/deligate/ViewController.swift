@@ -10,12 +10,13 @@ import UIKit
 
 class ViewController: UIViewController, senderDelegate {
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
-    if segue.identifier == "messageSegue" {
-        let BViewController:BViewController = segue.destination as! BViewController
-    BViewController.delegate = self
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+//    if segue.identifier == "messageSegue" {
+//        let BViewController:BViewController = segue.destination as! BViewController
+//    BViewController.delegate = self
+//        }
+//    }
+
     func receiveMessage(message: NSString) {
         print(message)
     }
@@ -27,6 +28,7 @@ class ViewController: UIViewController, senderDelegate {
         let storyboard: UIStoryboard = self.storyboard!
         if let second = storyboard.instantiateViewController(withIdentifier:"B") as? BViewController {
             second.b = a
+            second.delegate = self
         self.present(second, animated: true, completion: nil)
             
         }

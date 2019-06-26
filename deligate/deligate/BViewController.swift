@@ -7,9 +7,9 @@
 //
 import UIKit
 
-protocol dismissModal {
-    func dismiss()
-}
+//protocol dismissModal {
+//    func dismiss()
+//}
 
 protocol senderDelegate{
     func receiveMessage(message:NSString)
@@ -19,9 +19,10 @@ class BViewController: UIViewController {
     var b =  ""
     var delegate: senderDelegate?
     let message = "you got a message"
-    var delegate2: dismissModal?
+//    var delegate2: dismissModal?
     
-    func sendMessage(sender: AnyObject) {
+   
+    @IBAction func sendMessage(sender: AnyObject) {
         delegate?.receiveMessage(message: message as NSString)
     }
     
@@ -29,9 +30,9 @@ class BViewController: UIViewController {
         super.viewDidLoad()
         
     }
-    @IBAction func backToFirst(_ sender: Any) {
-        
-        delegate2?.dismiss()
-        
-    }
+//    @IBAction func backToFirst(_ sender: Any) {
+//
+//        delegate2?.dismiss()
+//
+//    }
 }

@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "deligate/ViewController.swift"
-            timestampString = "582635595.795483"
+            timestampString = "583251453.0654351"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "prepareForSegue(segue:sender:)"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "receiveMessage(message:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
